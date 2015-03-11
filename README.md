@@ -4,4 +4,4 @@
   - record.js :儲存點選的商品連結與圖片路徑於web storage 
 - demo: http://franklion.github.io/mom_shop/
 - 
-ps: 連到商品分頁後，點擊header中的Detail，連回商品清單頁面．
+ps: 連到商品分頁後，點擊header中的Detail，連回商品清單．
