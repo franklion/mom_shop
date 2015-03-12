@@ -4,14 +4,15 @@
 	<meta charset="UTF-8">
 	<title>momshop</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script type="text/javascript" src="js/record.js"></script>
 	<script type="text/javascript" src="js/post_record.js"></script>
 </head>
 <body>
-	<header>shop list</header>
-	<section>
-		<article>
+	<header id="header">shop list</header>
+	
+	<section id="section">
+		<article clas="article">
 			<ul>
 				<li>
 					<a href="http://franklion.github.io/mom_shop/goods.html?id=4345789">
@@ -58,18 +59,15 @@
 			</ul>
 		</article>
 	</section>
-	<aside>
-		<div id="clear"><p>清空紀錄</p></div>
-		<div id="his_float">
-			<div id="historyArea">
-				<div id="top"><p>瀏覽記錄</p></div>
-				<div id="area"></div>
-				<!-- <div class="content"><a href=""><img src=""></a></div>
-				<div class="content"><a href=""><img src=""></a></div>
-				<div class="content"><a href=""><img src=""></a></div> -->
-			</div>
-		</div>
-		
-	</aside>
+
+	<aside id="right-aside">
+      <div id="his-clear"><p>清空紀錄</p></div>
+        <div id="floating">
+          <div id="historyArea">
+            <div id="his-top"><p>瀏覽記錄</p></div>
+            <div id="his-area"></div>
+          </div>
+      </div>      
+    </aside>
 </body>
 </html>

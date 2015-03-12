@@ -2,7 +2,7 @@ $(function(){
 
 	var st = window.localStorage;
 
-	$('article ul li a').click(function(){
+	$('.article ul li a').click(function(){
 		var goods_href = $(this).attr('href');
 		var img_src = $(this).children('img').attr('src');
 
