@@ -23,16 +23,16 @@ $(function(){
 
 				records_href = records_href + ','+ goods_href;
 				records_img = records_img + ',' + img_src; 
-				var array = [];
-				var array_p = [];
-				array = records_href.split(',');
-				array_p = records_img.split(',');
-				if(array.length > 3 && array_p.length > 3){
-					array.shift();
-					array_p.shift();
+				var array_href = [];
+				var array_img = [];
+				array_href = records_href.split(',');
+				array_img = records_img.split(',');
+				if(array_href.length > 3 && array_img.length > 3){
+					array_href.shift();
+					array_img.shift();
 				}
-				st.setItem('goods_records_href',JSON.stringify(array));
-				st.setItem('goods_records_img',JSON.stringify(array_p));
+				st.setItem('goods_records_href',JSON.stringify(array_href));
+				st.setItem('goods_records_img',JSON.stringify(array_img));
 			}
 
 			//console.log('222');

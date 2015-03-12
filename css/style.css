@@ -48,7 +48,7 @@ ul {
 	width: 100%;
 	height: 100%;
 }
-.article .test {
+.article ul li a {
 	width: 230px;
 	height: 120px;
 	display: inline-block;
@@ -80,7 +80,7 @@ ul {
 	color: red;
 	font-size: 24px;	
 }
-#his-clear {
+#history-clear {
 	width: 80px;
 	height: 25px;
 	background-color: black;
@@ -88,7 +88,7 @@ ul {
 	text-align: center;
 	margin-left: 50px;
 }
-#floating {
+#history-floating {
 	position: fixed;
 }
 #historyArea {
@@ -100,7 +100,7 @@ ul {
 	border-bottom: 1px solid #EEE;
 	border-right: 1px solid #EEE;
 }
-#his-top{ 
+#history-top{ 
 	width: 80px;
 	height: 25px;
 	color: white;

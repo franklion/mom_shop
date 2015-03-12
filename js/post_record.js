@@ -15,13 +15,13 @@ $(function(){
 				for(var i = (length-1) ; i >= 0  ; i--){
 					html += '<div><a href=' + records_href[i] + '><img src=' + records_img[i] +'></a></div>';
 				}
-				$('#his-area').append(html);
+				$('#history-area').append(html);
 		}
 	}
 	
-	$('#his-clear').click(function(){
+	$('#history-clear').click(function(){
 		st.clear();
-		$('#his-area').html("");
+		$('#history-area').html("");
 	});
 });
 
