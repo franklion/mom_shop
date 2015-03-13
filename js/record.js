@@ -7,6 +7,7 @@ $(function() {
   $('.article-goods-link').click(function() {
 
     var checkResult;
+    var recordsLength;
     /* 目前點擊連結的 超連結 圖片路徑*/
     var data = {
       'goodsHref': $(this).attr('href'),
@@ -20,14 +21,14 @@ $(function() {
     } else {
 
       var records = JSON.parse(storage.getItem('goodsRecords'));
-
+      recordsLength = records.length;
       checkResult = checkRepeatData(records, data); 
   
       if (checkResult === 1) { 
         /* do nothing */
       } else {
         /* ready to push */     
-        if (records.length >= maxRecordsAmount) { // 3 
+        if (recordsLength >= maxRecordsAmount) { // 3 
             records.shift();
         } 
           records.push({'goodsHref':data.goodsHref, 'imgSrc':data.imgSrc});   
@@ -38,8 +39,9 @@ $(function() {
 
   function checkRepeatData(records, data) {
     var checkResult;
+    recordsLength = records.length;
     
-    for (var i = 0 ; i < records.length ; i++) {
+    for (var i = 0 ; i <  recordsLength; i++) {
       if (records[i].goodsHref === data.goodsHref) {
         checkResult = 1;
         break;
